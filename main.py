@@ -2,9 +2,9 @@ from typing import List
 
 # Skeleton code for even_list
 def even_list(int_list: List[int]) -> List[int]:
-    for i in int_list:
-      if i % 2 != 0:
-        int_list.remove(i)
+    for i in range (len(int_list)):
+        if int_list[i] % 2 != 0:
+            int_list[i] = 0
     return int_list
 
 
